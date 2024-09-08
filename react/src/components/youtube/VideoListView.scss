@@ -1,0 +1,62 @@
+@import "../../components/core/variables";
+@import "../common/Page";
+
+.video-overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.pagination{
+  display: inline;
+}
+
+.pagination-child{
+  margin-top: 10px;
+  float: right;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+}
+
+.item-count{
+  margin-right: 70px;
+}
+
+#pageSizeSelect{
+  font-size: 18px;
+}
+
+.page-navigation{
+
+  font-size: 30px;
+  span {
+    margin-left: 20px;
+  }
+  .inactive{
+    cursor: default;
+    color: gray;
+    &:hover{
+      cursor: default;
+    }
+  }
+  span:hover{
+    cursor: pointer;
+  }
+}
+
+.page-number{
+}
+
+.refresh-suggestions{
+  font-size: 28px;
+  &:hover{
+    cursor: pointer;
+  }
+}

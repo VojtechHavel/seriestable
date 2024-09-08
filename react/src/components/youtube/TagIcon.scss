@@ -1,0 +1,32 @@
+@import "../core/variables";
+@import "../common/Tile";
+
+.tag-icon-circle{
+  .tag-icon {
+    color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    svg{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+
+  .tag-icon-circle-child{
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative;
+  }
+}

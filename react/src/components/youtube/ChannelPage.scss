@@ -1,0 +1,20 @@
+@import "../../components/core/variables";
+
+.channel-page{
+  .page-header-title{
+    top: 10px
+  }
+}
+
+.page-section.loading-channel{
+  h3{
+    text-align: center;
+  }
+
+  .refresh-icon{
+    font-size: 36px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

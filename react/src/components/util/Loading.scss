@@ -1,0 +1,102 @@
+@import "../../components/core/variables";
+
+$speed: 2s;
+
+
+/* ------------------------- */
+
+$gap: 10%;
+$third: (100-2*$gap)/3;
+$twoThirds: 2*$third + $gap;
+$half: (100%-$gap)/2;
+
+.loading {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 70%;
+  top: 5%;
+  img{
+    width: 30%;
+  }
+}
+//
+//  .loading-arrow-span{
+//    width: 50%;
+//    height: 50%;
+//    top: -2px;
+//    position: relative;
+//  }
+//
+//
+//  >span {
+//    //display: block;
+//    position: absolute;
+//    //background-blend-mode: color-dodge;
+//    display: flex;
+//    justify-content: center; /* align horizontal */
+//    align-items: center;
+//    color: white;
+//    text-align: center;
+//
+//    &:nth-child(1) {
+//      top: 0;
+//      left: 0;
+//      width: 100%;
+//      height: $half;
+//      background-color: rgba( $blue, .75 );
+//
+//      animation: move1 $speed linear infinite;
+//    }
+//    &:nth-child(2) {
+//      bottom: 0;
+//      left: 0;
+//      width: $third;
+//      height: $half;
+//
+//      background-color: rgba( $green, .75 );
+//
+//      animation: move2 $speed linear infinite;
+//    }
+//    &:nth-child(3) {
+//      top: 0;
+//      right: 0;
+//      width: $twoThirds;
+//      height: $half;
+//
+//      background-color: rgba( #eb0002, .75 );
+//
+//      animation: move3 $speed linear infinite;
+//    }
+//  }
+//}
+//
+//
+//@keyframes move1 {
+//  0%   { width:100%}
+//  20%  { width: $twoThirds; transform: translate( 65%, 0);}
+//  40%  { width: $third; transform: translate( 45%, 0);}
+//  75%  { width: $third; transform: translate( 0%, 0);}
+//  100% { width:100% }
+//}
+//
+//
+//@keyframes move2 {
+//  0%   {  width: $third; height: $twoThirds   }
+//  25%  {  width: $third; height: 100% }
+//  50%  { width: 100%; height: $half}
+//  75%  {  width: 100% }
+//  100% { width: $third }
+//}
+//
+//@keyframes move3 {
+//  0%   { transform: translate( 0%, 123%); height: $half; top: 0}
+//  25%  { transform: translate( 0%, 123%); height: $half; top: 0}
+//  50%  { transform: translate( 0%, 0% ); height: 100%; top: 0}
+//  75%  { transform: translate(0%, 0%); height: $half; top: 0}
+//  100% { transform: translate(0%, 123%); height: $half; top: 0}
+//}
+
+

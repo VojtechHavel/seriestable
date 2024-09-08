@@ -1,0 +1,12 @@
+.confirm-buttons{
+  margin-top: 20px;
+  float: right;
+}
+
+.cancel-button{
+  margin-right: 15px;
+
+  &:hover{
+    cursor: pointer;
+  }
+}

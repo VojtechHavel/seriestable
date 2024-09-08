@@ -1,0 +1,11 @@
+.mobile-navbar-chevron{
+  display: none;
+  float: right;
+  position: relative;
+  font-size: 22px;
+
+  //mobile
+  @media (max-width: 991px) {
+    display: block;
+  }
+}

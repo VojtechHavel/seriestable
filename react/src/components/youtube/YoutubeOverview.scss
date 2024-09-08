@@ -1,0 +1,23 @@
+@import "../core/variables";
+
+.hover-section {
+  &:hover {
+    background-color: $blue-x-light;
+  }
+}
+
+.page-section{
+  &.add-section, &.signup-section{
+    cursor: pointer;
+    h3 {
+      text-align: center;
+      user-select: none;
+    }
+    color: black;
+    &:hover{
+      color: black;
+    }
+  }
+
+
+}

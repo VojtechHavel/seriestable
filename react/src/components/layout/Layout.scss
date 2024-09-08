@@ -1,0 +1,35 @@
+@import "../../components/core/variables";
+
+.site {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.middle-loading {
+  position: relative;
+
+  @media (max-width: $md) {
+      width: 320px;
+      height: 200px;
+  }
+
+  @media (min-width: $md) {
+      width: 640px;
+      height: 400px;
+  }
+
+  margin: auto;
+}
+
+.site-content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
+.toastify{
+  z-index: 15 !important;
+}
+
+#main-content{
+  margin-top: 45px;
+}

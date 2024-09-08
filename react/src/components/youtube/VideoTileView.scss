@@ -1,0 +1,142 @@
+@import "../../components/core/variables";
+
+.react-contexify{
+  z-index: 1;
+}
+
+.menu-tag-icon{
+  position: relative;
+  top: 0px;
+  padding-right: 5px;
+}
+
+.duration-icon {
+  right: 5px;
+  bottom: 5px;
+  padding: 0px 5px;
+  width: auto;
+  position: absolute;
+  text-align: center;
+  border-radius: 0px;
+  background-color: rgba(51,51,51,0.7);
+  color: #F5F5F5;
+  z-index: 1;
+}
+
+
+.video-tile {
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  .video-tile-link{
+    padding: 0px;
+  }
+
+  .menu-icon {
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    position: absolute;
+    text-align: center;
+    border-radius: 0px;
+    background-color: rgba(51,51,51,0.7);
+    color: #F5F5F5;
+    z-index: 1;
+  }
+
+  .video-tile-inner-wrapper {
+    position: relative;
+    background-color: white;
+    height: 260px;
+    text-align: left;
+
+    .video-tile-inner-image-wrapper {
+      position: relative;
+      height: 130px;
+      background-color: black;
+    }
+
+    .video-tile-inner-text-wrapper {
+      padding: 10px;
+
+      .video-tile-video-title {
+          text-decoration: none;
+          font-weight: bold;
+          color: black;
+      }
+
+      @media (max-width:$sm){
+        font-size: 11px;
+      }
+
+      .video-tile-channel-title {
+        display: block;
+        text-decoration: none;
+        margin-top: 5px;
+
+        font-size: 14px;
+        font-weight: normal;
+        color: $gray-light;
+
+        position: absolute;
+        bottom: 37px;
+
+      }
+
+      .video-tile-published-at {
+        display: block;
+        color: $gray-light;
+        font-size: 14px;
+
+        @media (min-width: $lg) and (max-width:$xl){
+          font-size: 12px;
+        }
+
+        @media (max-width:$sm){
+          font-size: 10px;
+        }
+
+        position: absolute;
+        bottom: 5px;
+      }
+
+      .video-tile-statistics{
+        position: absolute;
+        bottom: 20px;
+        color: $gray-light;
+        font-size: 14px;
+      }
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.LinesEllipsis{
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+.new-tab-link{
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  &:hover{
+    a {
+      color: white;
+    }
+  }
+}

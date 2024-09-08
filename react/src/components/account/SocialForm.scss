@@ -1,0 +1,31 @@
+.btn-facebook-login {
+  background-color: #3a54a0;
+}
+
+.btn-google-login {
+  background-color: #E94641;
+}
+
+.btn-social {
+
+  padding-bottom: 20px;
+  button {
+    color: white;
+    width: 100%;
+  }
+
+  .btn {
+    &:hover {
+      color: white;
+    }
+    text-align: left;
+  }
+
+  .social-icon {
+    padding-right: 30px;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.note-tile{
+  textarea{
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+  }
+
+
+  .video-tile{
+    padding: 0;
+
+    $image-height: 135px;
+
+    .video-tile-inner-wrapper img{
+      height: $image-height;
+    }
+
+    .video-tile-inner-wrapper {
+      .video-tile-inner-image-wrapper {
+        height: $image-height;
+      }
+    }
+  }
+}

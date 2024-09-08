@@ -1,0 +1,43 @@
+@import "../core/variables";
+
+.page-size-selection{
+  text-align: left;
+}
+
+.col-form-label{
+  font-weight: 600;
+}
+
+.settings-page{
+
+  .list-group-item {
+    text-align: left;
+    border: none;
+
+    &:nth-child(even){
+      background-color: $blue-x-light;
+    }
+  }
+}
+
+.col-form-value{
+  padding-top: calc(.375rem + 1px);
+  padding-bottom: calc(.375rem + 1px);
+  position: relative;
+  top: 6px;
+}
+
+.edit-value, .editable-name-value{
+  margin-right: 5px;
+}
+
+.edit-icon, .editable-name-icons span{
+  padding: 5px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.btn-cancel{
+  margin-left: 10px;
+}

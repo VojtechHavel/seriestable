@@ -1,0 +1,25 @@
+@import "../core/variables";
+.tag-videos-page{
+
+  //because of long add tag menu
+  margin-bottom: 100px;
+
+  .page-header-title{
+    top: -20px;
+  }
+
+  .page-header-logo{
+    top: 5px;
+    position: relative;
+  }
+
+  .page-header-child {
+    .tag-icon {
+      font-size: 40px;
+    }
+  }
+
+  .page-section.page-header {
+    padding: 10px;
+  }
+}

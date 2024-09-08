@@ -1,0 +1,86 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  background-color: white;
+  background-color: $gray-x-light;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+#app {
+  width: 100%;
+}
+
+/*bootstrap */
+input.form-control {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  & {
+    background-color: $blue-dark;
+    border-color: $blue-dark;
+  }
+  &:hover {
+    background-color: $blue-x-dark;
+    border-color: $blue-x-dark;
+  }
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-default {
+  background-color: white;
+  border-color: white;
+  &:hover {
+    background-color: $blue-light;
+    border-color: $blue-light;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+a.active {
+  pointer-events: none;
+  color: $gray-light;
+}
+
+.hidden {
+  display: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.m-b-10{
+  margin-bottom: 10px !important;
+}
+
+.validation-error{
+  color: $red;
+  margin-top: 10px;
+}
+
+.btn-default{
+  background-color: $gray-x-light;
+  &:hover{
+    background-color: $blue-light;
+  }
+}
+
+.btn-link{
+  color: $blue-dark;
+  &:hover, &:active, &:focus{
+    color: $blue-x-dark;
+    text-decoration: none;
+  }
+}

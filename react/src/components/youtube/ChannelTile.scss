@@ -1,0 +1,12 @@
+@import "../common/Tile";
+
+.channel-title{
+  user-select: none;
+}
+
+.tile-child {
+  background-color: red;
+  img{
+    user-select: none;
+  }
+}

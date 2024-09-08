@@ -1,0 +1,35 @@
+@import "../Core/variables";
+
+.save-icon {
+  position: absolute;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: initial;
+    color: $gray-light;
+  }
+}
+
+.note-textarea {
+  height: 100%;
+  position: relative;
+  margin: 0 10px;
+  min-height: 250px;
+
+  textarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    border-color: rgb(206, 212, 218);
+  }
+
+  .save-icon {
+    right: 25px; // because of potential scrollbar
+    top: 10px;
+    z-index: 2;
+  }
+
+}

@@ -1,0 +1,16 @@
+@import "../Core/variables";
+
+.video-list-statistics{
+  background-color: white;
+  margin-top: 10px;
+  border-top: solid 2px $gray-x-light;
+  padding: 10px;
+
+  .label{
+    text-align: left;
+    font-weight: 600;
+  }
+  .value{
+    text-align: left;
+  }
+}

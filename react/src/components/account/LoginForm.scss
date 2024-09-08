@@ -1,0 +1,46 @@
+@import "../../components/core/variables";
+
+#login-form{
+  padding: 0px;
+}
+
+$btn-height: 32px;
+
+.btn.btn-primary.loading{
+  width: 50px;
+  float: left;
+  height: $btn-height;
+  animation: loading 5s infinite;
+  cursor: default;
+  &:hover{
+    background-color: $green;
+    border: none;
+  }
+}
+
+@keyframes loading {
+  0%   {width: $btn-height;}
+  50%   {width: 100%;}
+  100% {width: $btn-height;}
+}
+
+.edit-buttons {
+  margin-top: 15px ;
+}
+
+a.button {
+  color: $blue-dark;
+  &:hover {
+    color: $blue-x-dark;
+    cursor: pointer
+  }
+}
+
+.material-icons.edit-icon{
+  top: 5px;
+  font-size: 20px;
+  position: relative;
+  &:hover{
+    cursor: pointer;
+  }
+}

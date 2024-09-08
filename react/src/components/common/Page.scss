@@ -1,0 +1,101 @@
+@import "../core/variables";
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.page-header {
+
+  input {
+    user-select: auto;
+    cursor: auto;
+  }
+
+  .page-header-child {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+
+    img, .page-header-logo {
+      display: inline-block;
+      margin-right: 20px;
+      width: 75px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      display: inline-block;
+      position: relative;
+      user-select: none;
+    }
+  }
+
+  &.page-header {
+    position: relative;
+
+    &:hover {
+      .header-menu-icon {
+        cursor: pointer;
+        visibility: visible;
+      }
+    }
+  }
+
+  .header-menu-icon {
+
+    visibility: hidden;
+    @media (hover: none), (max-width: $sm) {
+      visibility: visible;
+    }
+    right: -5px;
+    top: 5px;
+    width: 30px;
+    position: absolute;
+    text-align: center;
+    border-radius: 2px;
+    color: $gray;
+    z-index: 1;
+  }
+}
+
+.page-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+
+  h3 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &hover {
+    .collapse-icon {
+      visibility: visible;
+    }
+
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &.page-header {
+    padding: 15px;
+
+    h1 {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.page-header {
+  h3 {
+    text-align: center;
+  }
+}
+
+
+.page-section-empty {
+  color: $gray-light;
+}

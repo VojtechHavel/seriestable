@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<div style="margin:0;padding:0">
+    <table width="100%" cellpadding="0" style="min-width:348px" border="0" cellspacing="0">
+        <tbody>
+        <tr></tr>
+        <tr align="center">
+            <td>
+                <table border="0" cellspacing="0" cellpadding="0"
+                       style="padding-bottom:20px;max-width:600px;min-width:220px">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                                <tbody>
+
+                                <tr style="background-color:#333133;height:40px;padding:10px">
+                                    <td></td>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                               style="direction:ltr">
+
+                                            <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                </td>
+                                                <td align="right"
+                                                    style="font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:500">
+                                                    <a href="https://videomark.app"
+                                                       style="text-decoration:none;color:white" target="_blank"
+                                                       rel="noopener">Videomark.app</a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr style="height:20px;background-color:rgb(233,236,239)">
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                </tr>
+
+
+                                <tr style="height:250px;background-color:rgb(233,236,239);padding:10px">
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                    <td>
+                                        <div style="background:white;min-height:200px;padding:10px;border:1px solid rgba(0,0,0,0.125);border-radius:0.25em">
+                                            <div th:if="${content}=='reset-password'">
+                                                <div th:replace="fragments/reset-password :: reset-password">Content from fragment</div>
+                                            </div>
+
+                                            <div th:if="${content}=='feedback'">
+                                                <div th:replace="fragments/feedback :: feedback">Content from fragment</div>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                </tr>
+
+                                <tr style="height:20px;background-color:rgb(233,236,239)">
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td width="20">
+                                        <div></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

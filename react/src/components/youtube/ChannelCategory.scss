@@ -1,0 +1,73 @@
+.channel-category {
+
+  .page-section {
+    padding: 20px 30px;
+  }
+
+  .category-menu-icons, .edit-icon, .editable-name-icons {
+    top: 7px;
+    position: relative;
+    font-size: 16px;
+
+    span, & {
+      color: gray;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .category-menu-icons span, .edit-icon, .editable-name-icons span {
+    padding: 5px;
+  }
+
+  .recommended-section.page-section:hover {
+    cursor: default;
+  }
+
+  .channel-category-menu {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .add-channel-button {
+    .channel-link {
+      padding: 0px;
+    }
+
+    input {
+      min-height: 250px;
+    }
+  }
+
+  .rename-category-form {
+    .rename-category-name {
+      h3 {
+        display: inline;
+      }
+
+      .editable-category-name {
+        outline: -webkit-focus-ring-color auto 1px;
+        cursor: auto;
+      }
+
+    }
+  }
+
+  .collapse-icon {
+    cursor: pointer;
+    color: gray;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+
+  .page-header-title {
+    font-size: 22px;
+    font-weight: 600;
+    float: left;
+    margin-right: 15px;
+    user-select: none;
+  }
+}

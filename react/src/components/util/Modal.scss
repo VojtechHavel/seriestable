@@ -1,0 +1,58 @@
+@import "../../components/Core/variables";
+
+.modal-close-icon {
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  position: absolute;
+  height: 25px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    i.material-icons {
+      color: $gray-dark;
+    }
+  }
+  i.material-icons {
+    font-size: 22px;
+    color: $gray-light;
+  }
+}
+
+
+@media (max-width: $sm) {
+  .modal-parent {
+    width: 100%;
+    .modal-child {
+      min-width: initial;
+    }
+  }
+}
+
+.modal-child {
+  max-height: 90vh;
+  max-width: 700px;
+  min-width: 380px
+}
+
+.modal-parent {
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0px;
+  outline: none;
+  position: fixed;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 0;
+  padding: 30px;
+}
+
+.validation-error{
+  color: $red;
+}

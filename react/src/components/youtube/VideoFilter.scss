@@ -1,0 +1,69 @@
+@import "../Core/variables";
+
+.video-filter {
+  border-top: solid 2px $gray-x-light;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  .tag-inclusion {
+    text-align: left;
+    font-size: 20px;
+
+    .tag-inclusion-row {
+      .remove-tag-inclusion {
+        color: $gray-light;
+        top: 1px;
+        position: relative;
+        float: right;
+      }
+
+      &:hover {
+        cursor: pointer;
+        .remove-tag-inclusion {
+          color: $gray-dark;
+
+        }
+      }
+    }
+  }
+}
+
+.sort-label{
+  font-size: 18px;
+}
+
+
+.video-state-filter {
+  margin-bottom: 10px;
+}
+
+.video-search, .video-state-filter {
+
+  margin-bottom: 10px;
+
+  .col-button{
+    padding: 0;
+    button{
+      width: 100%;
+    }
+  }
+
+  .btn-group, .title-input{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #labelSearchByTitle {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  #formSearchBy {
+    &:focus {
+      outline: 2px solid $blue-dark;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
